@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+#elon {
+    border-radius: 4%;
+    width: 20em;
+}
