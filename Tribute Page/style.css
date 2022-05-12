@@ -1,11 +1,12 @@
 * {
     margin: 0 auto;
-    padding: 0;
+    padding: 0 auto;
     background-color: blanchedalmond;
 }
 .container {
     background-color: burlywood;
     width: 40em;
+    position: relative;
 }
 .center {
     text-align: center;
@@ -26,4 +27,15 @@ p {
 }
 #chapter {
     text-decoration: underline;
+    font-family: monospace;
+}
+.section {
+    position: relative;
+    margin: 1em;
+    padding: 1em;
+}
+#auto {
+    padding: 0 auto;
+    margin: 0 auto;
+    height: 0 auto;
 }
