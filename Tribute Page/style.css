@@ -1,8 +1,12 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    background-color: blanchedalmond;
 }
-
+.container {
+    background-color: burlywood;
+    width: 40em;
+}
 .center {
     text-align: center;
 }
@@ -10,4 +14,16 @@
 #elon {
     border-radius: 4%;
     width: 20em;
+}
+.main {
+    margin: 1em;
+    padding: 1em;
+}
+p {
+    width: 30em;
+    height: 10em;
+    padding: 1em;   
+}
+#chapter {
+    text-decoration: underline;
 }
