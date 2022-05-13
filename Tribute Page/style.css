@@ -1,7 +1,7 @@
 * {
     margin: 0 auto;
     padding: 0 auto;
-    background-color: blanchedalmond;
+    background-color: blanchedalmond auto;
 }
 .container {
     background-color: burlywood;
@@ -38,4 +38,10 @@ p {
     padding: 0 auto;
     margin: 0 auto;
     height: 0 auto;
+}
+footer {
+    background-color: cadetblue;
+    text-align: left;
+    margin: .5em;
+    padding: .5em;
 }
