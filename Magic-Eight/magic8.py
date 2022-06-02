@@ -2,7 +2,7 @@ import random
 
 
 name = "Peter"
-question = "Yes" or "No"
+question = "Will you become great?"
 answer = " "
 random_number = random.randint(1,9)
 
@@ -34,3 +34,10 @@ elif random_number == 8:
 
 elif random_number == 9: 
     answer = "Very doubtful."
+
+else:
+    answer = "Error"
+
+print(name + " asks: " + question)
+
+print("Magic 8-Ball's answer: " + answer)
