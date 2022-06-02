@@ -1,12 +1,10 @@
 import random
 
 
-name = "Peter"
-question = "Will you become great?"
+name = input("Enter your name:")
+question = input("What is your question? ")
 answer = " "
 random_number = random.randint(1,9)
-
-#print(random_number)
 
 if random_number == 1:
     answer ="Yes - definitely"
@@ -37,6 +35,8 @@ elif random_number == 9:
 
 else:
     answer = "Error"
+
+
 
 print(name + " asks: " + question)
 
