@@ -24,3 +24,8 @@ else:
     price = (weight * 4.75) + groundshipping_flat 
     print("To ship your package with ground shipping it will cost:")
     print(price)
+
+#Ground Shipping Premium
+groundshipping_premium = 125.00
+print("To ship with Ground shipping Premium it will cost")
+print(groundshipping_premium)
