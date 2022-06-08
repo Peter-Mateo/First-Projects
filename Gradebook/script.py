@@ -15,3 +15,15 @@ gradebook.append(["visual arts", 93])
 
 #Test
 print(gradebook)
+
+#Modifying the 2D list
+gradebook[-1][-1] = 98
+gradebook[2].remove(98)
+gradebook[2].append("Pass")
+
+#Combination
+
+full_gradebook = last_semester_gradebook + gradebook
+
+#Test
+print(full_gradebook)
