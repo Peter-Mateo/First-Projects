@@ -8,3 +8,10 @@ gradebook = [["physics", 98], ["calculus", 97], ["poetry", 98], ["history", 88]]
 
 #Test 
 print(gradebook)
+
+#Adding to a list
+gradebook.append(["computer science", 100])
+gradebook.append(["visual arts", 93])
+
+#Test
+print(gradebook)
