@@ -22,7 +22,6 @@ gradebook[2].remove(98)
 gradebook[2].append("Pass")
 
 #Combination
-
 full_gradebook = last_semester_gradebook + gradebook
 
 #Test
