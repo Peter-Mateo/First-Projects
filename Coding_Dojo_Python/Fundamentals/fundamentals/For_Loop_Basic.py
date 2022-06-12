@@ -45,3 +45,12 @@ for i in range(1):
     while x >= 2:
         print(x)
         x = x - 4
+
+print("--------------------------")
+
+lowNum = 1
+highNum = 20
+mult = 3 
+for i in range(lowNum, highNum):
+    if i%3 == 0:
+        print(i)s
