@@ -53,4 +53,4 @@ highNum = 20
 mult = 3 
 for i in range(lowNum, highNum):
     if i%3 == 0:
-        print(i)s
+        print(i)
