@@ -27,3 +27,16 @@ for i in range(1):
             print("Coding")
         else:
             print(x)
+
+print("--------------------------")
+
+for i in range(1):
+    x = 1 
+    z = 1
+    while x < 500000:
+        z = z + x
+        x = x + 2
+    print(z)
+
+print("--------------------------")
+
