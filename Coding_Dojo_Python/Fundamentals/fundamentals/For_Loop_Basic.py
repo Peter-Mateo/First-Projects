@@ -40,3 +40,8 @@ for i in range(1):
 
 print("--------------------------")
 
+for i in range(1):
+    x = 2018
+    while x >= 2:
+        print(x)
+        x = x - 4
