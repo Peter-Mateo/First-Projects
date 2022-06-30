@@ -41,3 +41,22 @@ user_peter.display_info()
 user_peter.enroll()
 print("--------------------------")
 user_peter.enroll()
+
+
+#2 More Instances of User class
+user_leo = user("Leo", "Mateo", "leom305131@gmail.com", 21)
+user_steven = user("Steven", "Mateo", "stevenmateooo@gmail.com", 24)
+
+#User Spending
+user_leo.spend_points(50)
+print("--------------------------")
+user_steven.enroll()
+user_steven.spend_points(80)
+print("--------------------------")
+
+#Calling the DisplayInfo
+user_leo.display_info()
+print("--------------------------")
+user_steven.display_info()
+print("--------------------------")
+user_peter.display_info()
