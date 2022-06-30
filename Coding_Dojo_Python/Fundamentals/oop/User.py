@@ -18,7 +18,7 @@ class user:
         print(self.gold_card_points)
 
     def enroll(self):
-        if user.is_rewards_member != True:
+        if self.is_rewards_member != True:
             self.is_rewards_member = True
             self.gold_card_points = 200
         else:
@@ -36,3 +36,8 @@ class user:
 user_peter = user("Peter", "Mateo", "p305127@icloud.com", 21)
 
 user_peter.display_info()
+
+# Testing Enroll
+user_peter.enroll()
+print("--------------------------")
+user_peter.enroll()
