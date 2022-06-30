@@ -9,3 +9,14 @@ class user:
         self.is_rewards_member = False
         self.gold_card_points = 0
 
+    def display_info(self):
+        print()
+    def enroll(self):
+        if user.is_rewards_member != True:
+            self.is_rewards_member = True
+            self.gold_card_points = 200
+        else:
+            print("User already a member.")
+            return False
+
+
