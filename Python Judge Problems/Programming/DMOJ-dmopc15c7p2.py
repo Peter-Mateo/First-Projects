@@ -30,22 +30,36 @@ elif x == 2:
 
 elif x == 3:
     print("lkjf lskjfdl lkjf")
-    
+    print("================================")
+    print(number.count(" " + 1))
+
 elif x == 4:
     print("hello bbbaaaccd")
+    print("================================")
+    print(number.count(" " + 1))
 
 elif x == 5:
     print("lkjf")
+    print("================================")
+    print(number.count(" " + 1))
 
 elif x == 6:
     print("lkjd lskdjflskdjflksldfkj ljkjfk lkjdflkjlj soiuroiuow")
+    print("================================")
+    print(number.count(" " + 1))
 
 elif x == 7:
     print("lksjf kljk")
+    print("================================")
+    print(number.count(" " + 1))
 
 elif x == 8:
     print("lkjsfoidjs bbbaaaccd  kdkljfls slkfjwoiur oaskj lksdjflj lskjflak  lsjfkllk lkdjfl ljouworiuoi qoisauoiaiyoiy oiauoifpeopru oicuoiuaoiuor")
+    print("================================")
+    print(number.count(" " + 1))
 
 elif x == 9:
     print("a")
+    print("================================")
+    print(number.count(" " + 1))
 
