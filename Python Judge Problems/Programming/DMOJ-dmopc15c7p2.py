@@ -24,42 +24,50 @@ if x == 1:
     print(number.count(" ") + 1)
 
 elif x == 2:
-    number ="aabbbaa bbbaaaccd  kdkljfls slkfjwoiur oaskj"
+    number ="aabbbaa bbbaaaccd kdkljfls slkfjwoiur oaskj"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 3:
     number ="lkjf lskjfdl lkjf"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 4:
     number = "hello bbbaaaccd"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 5:
     number = "lkjf"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 6:
     number = "lkjd lskdjflskdjflksldfkj ljkjfk lkjdflkjlj soiuroiuow"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 7:
     number = "lksjf kljk"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 8:
-    number = "lkjsfoidjs bbbaaaccd  kdkljfls slkfjwoiur oaskj lksdjflj lskjflak  lsjfkllk lkdjfl ljouworiuoi qoisauoiaiyoiy oiauoifpeopru oicuoiuaoiuor"
+    number = "lkjsfoidjs bbbaaaccd kdkljfls slkfjwoiur oaskj lksdjflj lskjflak lsjfkllk lkdjfl ljouworiuoi qoisauoiaiyoiy oiauoifpeopru oicuoiuaoiuor"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
 elif x == 9:
     number = "a"
+    print(number)
     print("================================")
     print(number.count(" ") + 1)
 
