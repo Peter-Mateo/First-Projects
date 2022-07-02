@@ -15,51 +15,51 @@ Output the number of words in the input line.
 
 import random
 
-x = random.choice(1, 9)
+x = random.randint(1, 9)
 
 if x == 1:
     number = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adipiscing"
     print(number)
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 2:
-    print("aabbbaa bbbaaaccd  kdkljfls slkfjwoiur oaskj")
+    number ="aabbbaa bbbaaaccd  kdkljfls slkfjwoiur oaskj"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 3:
-    print("lkjf lskjfdl lkjf")
+    number ="lkjf lskjfdl lkjf"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 4:
-    print("hello bbbaaaccd")
+    number = "hello bbbaaaccd"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 5:
-    print("lkjf")
+    number = "lkjf"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 6:
-    print("lkjd lskdjflskdjflksldfkj ljkjfk lkjdflkjlj soiuroiuow")
+    number = "lkjd lskdjflskdjflksldfkj ljkjfk lkjdflkjlj soiuroiuow"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 7:
-    print("lksjf kljk")
+    number = "lksjf kljk"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 8:
-    print("lkjsfoidjs bbbaaaccd  kdkljfls slkfjwoiur oaskj lksdjflj lskjflak  lsjfkllk lkdjfl ljouworiuoi qoisauoiaiyoiy oiauoifpeopru oicuoiuaoiuor")
+    number = "lkjsfoidjs bbbaaaccd  kdkljfls slkfjwoiur oaskj lksdjflj lskjflak  lsjfkllk lkdjfl ljouworiuoi qoisauoiaiyoiy oiauoifpeopru oicuoiuaoiuor"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
 elif x == 9:
-    print("a")
+    number = "a"
     print("================================")
-    print(number.count(" " + 1))
+    print(number.count(" ") + 1)
 
