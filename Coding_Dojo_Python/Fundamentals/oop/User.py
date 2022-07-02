@@ -54,7 +54,7 @@ user_steven.enroll()
 user_steven.spend_points(80)
 print("--------------------------")
 
-#Calling the DisplayInfo
+#Calling the DisplayInfo 
 user_leo.display_info()
 print("--------------------------")
 user_steven.display_info()
