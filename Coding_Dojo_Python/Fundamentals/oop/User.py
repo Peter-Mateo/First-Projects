@@ -8,7 +8,6 @@ class user:
         self.age = age
         self.is_rewards_member = False
         self.gold_card_points = 0
-        
 
     def display_info(self):
         print(self.first_name)
