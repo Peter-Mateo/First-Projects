@@ -71,3 +71,7 @@ elif x == 9:
     print("================================")
     print(number.count(" ") + 1)
 
+
+
+text = input("")
+print(text.count(" ") + 1) 
