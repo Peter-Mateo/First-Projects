@@ -7,13 +7,24 @@ class User:
     # other methods
     
     def make_deposit(self, amount):
-        self.account = self.account + amount
+        self.balance = self.balance + amount
     # your code here
     def withdraw(self, amount):
         if amount > self.account:
             print("Deposit more money")
         else:
-            self.account -= amount
+            self.balance -= amount
     def display_user_balance(self):
         print(self.account)
 
+# Tests
+
+user1 = User("Peter", "p305127@gmail.com", "Suncoast")
+
+user1.make_deposit(500)
+
+user1.withdraw(100)
+
+user1.withdraw(1000)
+
+user1.display_user_balance()
