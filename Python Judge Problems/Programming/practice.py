@@ -34,3 +34,7 @@ player_jason = Player(jason["name"], jason["age"], jason["position"], jason["tea
 player_kyrie = Player(kyrie["name"],kyrie["age"],kyrie["position"],kyrie["team"])
 
 
+# ... (class definition and large list of players here)
+new_team = []
+# Write your for loop here to populate the new_team variable with Player objects.
+    
