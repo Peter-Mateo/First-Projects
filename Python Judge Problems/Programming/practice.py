@@ -9,7 +9,7 @@ class BankAccount:
         self.taxes = taxes
 
     def display_amount(self):
-        print(self.account)
+        print(f"{self.bank}:{self.currency} {self.account}")
 
     def account_info(self):
         print(f"{self.first_name} {self.last_name}")
@@ -19,10 +19,10 @@ class BankAccount:
     def withdraw(self, amount):
         if amount > self.account:
             print(f"Not enough money to withdraw from {self.bank}")
-
+            print(f"New balance {self.account}")
         else:
             self.account = self.account - amount
-            print(f"Successfully withdraw from {self.bank}")
+            print(f"Successfully withdrawn {amount} from {self.bank}")
     
     def deposit(self, amount):
         self.account = self.account + amount
@@ -57,7 +57,7 @@ Jordan_11.price_changed(500)
 print(Jordan_11.price)
 
 
-
+print("-" * 15)
 User.account_info()
 print("-" * 15)
 User.display_amount()
