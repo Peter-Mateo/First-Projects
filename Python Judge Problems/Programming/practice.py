@@ -1,30 +1,43 @@
-class User:
-    def __init__(self, name, email, BankAccount):
-        self.name = name
-        self.email = email
-        self.account = BankAccount(int_rate=0.02, balance=0)
-    
-    # other methods
-    
-    def make_deposit(self, amount):
-        self.balance = self.balance + amount
-    # your code here
-    def withdraw(self, amount):
-        if amount > self.account:
-            print("Deposit more money")
-        else:
-            self.balance -= amount
-    def display_user_balance(self):
-        print(self.account)
+import random as rnd
+import math as mth
+import datetime as dt
 
-# Tests
 
-user1 = User("Peter", "p305127@gmail.com", "Suncoast")
+answer = rnd.randint(1,4)
 
-user1.make_deposit(500)
+if answer == 1:
+    print("You are happy!!")
 
-user1.withdraw(100)
+elif answer == 2:
+    print("You are enough!")
 
-user1.withdraw(1000)
+elif answer == 3:
+    print("She wasn't worth it!")
 
-user1.display_user_balance()
+elif answer == 4:
+    print("You did it!!")
+
+quantity = 3
+item_price = 4000.15
+sales_tax = 0.065
+
+print(f"Quantity: {quantity}")
+print(f"item_price: ${item_price}")
+print(f"Sales Tax: {sales_tax :.1%}")
+print(f"Total: ${quantity * item_price * sales_tax :,.2f}")
+
+print("-" * 15)
+z = complex(2, -3)
+
+print(z)
+
+birth_date = dt.date(2001, 6, 27)
+now = dt.date.today()
+
+age = now - birth_date
+delta_age = age.days
+age_years = delta_age // 365
+months = (delta_age % 365) // 30
+
+print(age)
+print(age_years , months)
