@@ -1,27 +1,79 @@
-class Robot:
+class BankAccount:
 
-    def __init__(self, name, color, weight):
-        self.name = name
-        self.color = color
-        self.weight = weight
-        
-    def introduce_self(self):
-        print("My name is " + self.name)
-"""
-r1 = Robot()
-r1.name = "Tom"
-r1.color = "red"
-r1.weight = 30
+    def __init__(self, first_name, last_name, bank, account, currency, taxes):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.bank = bank
+        self.currency = currency
+        self.account = account
+        self.taxes = taxes
+
+    def display_amount(self):
+        print(self.account)
+
+    def account_info(self):
+        print(f"{self.first_name} {self.last_name}")
+        print(f"{self.bank}")
+        print(f"{self.currency} {self.account}")
+    
+    def withdraw(self, amount):
+        if amount > self.account:
+            print(f"Not enough money to withdraw from {self.bank}")
+
+        else:
+            self.account = self.account - amount
+            print(f"Successfully withdraw from {self.bank}")
+    
+    def deposit(self, amount):
+        self.account = self.account + amount
+        print("Deposited")
+
+    def purchase(self, amount):
+        if self.account > amount:
+            self.account = self.account - amount
+            print("Purchase Successful")
+        else:
+            print(f"Not enough money to purchase")
+
+
+class Shoe:
+    def __init__(self, brand, style, size, price):
+        self.brand = brand
+        self.style = style
+        self.size = size
+        self.price = price
+
+    def price_changed(self, price):
+        self.price = price
 
 
 
-r2 = Robot()
-r2.name = "Jerry"
-r2.color = "blue"
-r2.weight = 40
-"""
 
-r1 = Robot("Peter", "brown", 175)
-r2 = Robot("Jerry", "blue", 40)
-r1.introduce_self()
-r2.introduce_self()
+User = BankAccount("Peter", "Mateo", "Suncoast", 500, "USD", .07)
+Jordan_11 = Shoe("Jordan", "Basketball", 13, 400)
+
+Jordan_11.price_changed(500)
+
+print(Jordan_11.price)
+
+
+
+User.account_info()
+print("-" * 15)
+User.display_amount()
+print("-" * 15)
+User.withdraw(600)
+print("-" * 15)
+User.deposit(1000)
+print("-" * 15)
+User.display_amount()
+print("-" * 15)
+User.purchase(500)
+print("-" * 15)
+User.display_amount()
+print("-" * 15)
+User.purchase(5000)
+print("-" * 15)
+User.withdraw(600)
+print("-" * 15)
+User.account_info()
