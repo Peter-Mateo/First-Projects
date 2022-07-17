@@ -27,10 +27,10 @@ kyrie = {
 # Create your Player instances here!
 # player_jason = ???
 
-kevin_player = Player(kevin["name"], kevin["age"], kevin["position"], kevin["team"])
+player_kevin = Player(kevin["name"], kevin["age"], kevin["position"], kevin["team"])
 
-jason_player = Player(jason["name"], jason["age"], jason["position"], jason["team"])
+player_jason = Player(jason["name"], jason["age"], jason["position"], jason["team"])
 
-kyrie_player = Player(kyrie["name"],kyrie["age"],kyrie["position"],kyrie["team"])
+player_kyrie = Player(kyrie["name"],kyrie["age"],kyrie["position"],kyrie["team"])
 
 
