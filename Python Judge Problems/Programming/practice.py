@@ -1,85 +1,32 @@
-from hashlib import new
-from unicodedata import name
 
 
-class Player:
-    def __init__(self, name, age, position, team):
-        self.name = name
-        self.age = age
-        self.position = position
-        self.team = team 
+class Employee:
+	def __init__(self, name, IDnumber, department, job_title):
+		self.name = name
+		self.IDnumber = IDnumber
+		self.department = department
+		self.job_title = job_title
 
+	def set_name(self, name):
+		self.name = name
 
-kevin = {
-    	"name": "Kevin Durant", 
-    	"age":34, 
-    	"position": "small forward", 
-    	"team": "Brooklyn Nets"
-}
-jason = {
-    	"name": "Jason Tatum", 
-    	"age":24, 
-    	"position": "small forward", 
-    	"team": "Boston Celtics"
-}
-kyrie = {
-    	"name": "Kyrie Irving", 
-    	"age":32, "position": "Point Guard", 
-    	"team": "Brooklyn Nets"
-}
-    
-# Create your Player instances here!
-# player_jason = ???
+	def set_IDnumber(self, id):
+		self.id = id
+	
+	def set_department(self, department):
+		self.department = department
 
-player_kevin = Player(kevin["name"], kevin["age"], kevin["position"], kevin["team"])
+	def set_job_title(self, job_title):
+		self.job_title = job_title
 
-player_jason = Player(jason["name"], jason["age"], jason["position"], jason["team"])
+	def get_name(self):
+		return self.name
 
-player_kyrie = Player(kyrie["name"],kyrie["age"],kyrie["position"],kyrie["team"])
+	def get_IDnumber(self):
+		return self.id 
+	
+	def get_department(self):
+		return self.department 
 
-#########################################################
-players = [
-    {
-    	"name": "Kevin Durant", 
-    	"age":34, 
-    	"position": "small forward", 
-    	"team": "Brooklyn Nets"
-    },
-    {
-    	"name": "Jason Tatum", 
-    	"age":24, 
-    	"position": "small forward", 
-    	"team": "Boston Celtics"
-    },
-    {
-    	"name": "Kyrie Irving", 
-    	"age":32, "position": "Point Guard", 
-    	"team": "Brooklyn Nets"
-    },
-    {
-    	"name": "Damian Lillard", 
-    	"age":33, "position": "Point Guard", 
-    	"team": "Portland Trailblazers"
-    },
-    {
-    	"name": "Joel Embiid", 
-    	"age":32, "position": "Power Foward", 
-    	"team": "Philidelphia 76ers"
-    },
-    {
-    	"name": "", 
-    	"age":16, 
-    	"position": "P", 
-    	"team": "en"
-    }
-]
-
-# ... (class definition and large list of players here)
-new_team = []
-# Write your for loop here to populate the new_team variable with Player objects.
-
-for i in range(len(players)):
-    convert = players[i]
-    new_team.append(convert)
-
-print(new_team)
+	def get_job_title(self):
+		return self.job_title 
