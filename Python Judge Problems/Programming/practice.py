@@ -1,3 +1,7 @@
+from hashlib import new
+from unicodedata import name
+
+
 class Player:
     def __init__(self, name, age, position, team):
         self.name = name
@@ -33,8 +37,49 @@ player_jason = Player(jason["name"], jason["age"], jason["position"], jason["tea
 
 player_kyrie = Player(kyrie["name"],kyrie["age"],kyrie["position"],kyrie["team"])
 
+#########################################################
+players = [
+    {
+    	"name": "Kevin Durant", 
+    	"age":34, 
+    	"position": "small forward", 
+    	"team": "Brooklyn Nets"
+    },
+    {
+    	"name": "Jason Tatum", 
+    	"age":24, 
+    	"position": "small forward", 
+    	"team": "Boston Celtics"
+    },
+    {
+    	"name": "Kyrie Irving", 
+    	"age":32, "position": "Point Guard", 
+    	"team": "Brooklyn Nets"
+    },
+    {
+    	"name": "Damian Lillard", 
+    	"age":33, "position": "Point Guard", 
+    	"team": "Portland Trailblazers"
+    },
+    {
+    	"name": "Joel Embiid", 
+    	"age":32, "position": "Power Foward", 
+    	"team": "Philidelphia 76ers"
+    },
+    {
+    	"name": "", 
+    	"age":16, 
+    	"position": "P", 
+    	"team": "en"
+    }
+]
 
 # ... (class definition and large list of players here)
 new_team = []
 # Write your for loop here to populate the new_team variable with Player objects.
-    
+
+for i in range(len(players)):
+    convert = players[i]
+    new_team.append(convert)
+
+print(new_team)
