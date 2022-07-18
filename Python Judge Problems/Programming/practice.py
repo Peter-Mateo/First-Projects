@@ -30,3 +30,23 @@ class Employee:
 
 	def get_job_title(self):
 		return self.job_title 
+
+	#return the objects as a string
+	def print(self):
+		print("Name: "			+ self.name + \
+			", \nID number: "   + str(self.IDnumber) + \
+			"\n Job Title: "    + self.job_title)
+
+#Creating Three Employee objects
+
+employee1 = Employee("Susan Meyers", 47899, "Accounting", "Vice President")
+employee2 = Employee("Mark Jones", 39119, "IT", "Programmer")
+employee3 = Employee("Joy Rogers", 81774, "Manufacturing", "Engineer")
+
+employee1.print()
+print()
+employee2.print()
+print()
+employee3.print()
+
+employee1.get_job_title()
