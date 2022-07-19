@@ -1,52 +1,53 @@
 
 
-class Employee:
-	def __init__(self, name, IDnumber, department, job_title):
-		self.name = name
+from distutils.command.build_scripts import first_line_re
+
+
+class CodingDojo:
+	def __init__(self, first_name, last_name, IDnumber, language):
+		self.first_name = first_name
+		self.last_name = last_name
 		self.IDnumber = IDnumber
-		self.department = department
-		self.job_title = job_title
+		self.language = language
 
-	def set_name(self, name):
-		self.name = name
+	def fname_change(self, fname):
+		self.first_name = fname
 
-	def set_IDnumber(self, id):
-		self.id = id
-	
-	def set_department(self, department):
-		self.department = department
+	def lname_change(self, lname):
+		self.last_name = lname
 
-	def set_job_title(self, job_title):
-		self.job_title = job_title
+	def IDnumber(self, IDnumber):
+		self.IDnumber = IDnumber
 
-	def get_name(self):
-		return self.name
+	def change_language(self, language):
+		self.language = language
+
+	def get_fname(self):
+		return self.first_name
+
+	def get_lname(self):
+		return self.last_name 
 
 	def get_IDnumber(self):
-		return self.id 
-	
-	def get_department(self):
-		return self.department 
+		return self.IDnumber 
 
-	def get_job_title(self):
-		return self.job_title 
+	def get_language(self):
+		return self.language 
 
-	#return the objects as a string
-	def print(self):
-		print("Name: "			+ self.name + \
-			", \nID number: "   + str(self.IDnumber) + \
-			"\n Job Title: "    + self.job_title)
+	#Print out the Student 
+	def Student_Info(self):
+		print("Student: " + self.first_name + " " + self.last_name + 
+				"\n ID: "+ str(self.IDnumber) +
+		"\n Language: "+ self.language)
 
-#Creating Three Employee objects
+"""
+leo = CodingDojo("Leonardo", "Mateo", 305131, "English")
 
-employee1 = Employee("Susan Meyers", 47899, "Accounting", "Vice President")
-employee2 = Employee("Mark Jones", 39119, "IT", "Programmer")
-employee3 = Employee("Joy Rogers", 81774, "Manufacturing", "Engineer")
+leo.Student_Info()
 
-employee1.print()
-print()
-employee2.print()
-print()
-employee3.print()
+print("--" * 15)
 
-employee1.get_job_title()
+leo.IDnumber = 305127
+
+leo.Student_Info()
+"""
