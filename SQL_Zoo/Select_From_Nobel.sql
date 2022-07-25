@@ -64,3 +64,9 @@ OR(subject like 'literature' AND yr >= 2004)
 SELECT *
 FROM nobel
 WHERE winner IN ('Peter GRÜNBERG')
+
+--Find all details of the prize won by EUGENE O'NEILL
+--You can't put a single quote in a quote string directly. You can use two single quotes within a quoted string.
+SELECT *
+FROM nobel
+WHERE winner IN ('EUGENE O''NEILL')
