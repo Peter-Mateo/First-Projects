@@ -76,3 +76,10 @@ SELECT winner, yr, subject
 FROM nobel
 WHERE winner like 'sir%' 
 ORDER BY yr DESC, winner 
+
+--Show the 1984 winners and subject ordered by subject and winner name; but list chemistry and physics last.
+SELECT winner, subject
+FROM nobel
+WHERE yr = 1984
+ORDER BY 
+CASE WHEN subject IN ('Physics','Chemistry') THEN 1 ELSE 0,subject,winner
