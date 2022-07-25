@@ -15,3 +15,9 @@ AND subject = 'literature'
 SELECT yr, subject
 FROM nobel
 WHERE winner like 'Albert Einstein'
+
+--Give the name of the 'peace' winners since the year 2000, including 2000.
+SELECT winner
+FROM nobel
+WHERE yr >= 2000
+AND subject like 'peace'
