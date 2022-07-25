@@ -36,3 +36,8 @@ AND (subject = 'literature')
 SELECT *
 FROM nobel 
 WHERE winner IN ('Theodore Roosevelt', 'Woodrow Wilson', 'Jimmy Carter', 'Barack Obama')
+
+--Show the winners with first name John
+SELECT winner
+FROM nobel
+WHERE winner like 'John%'
