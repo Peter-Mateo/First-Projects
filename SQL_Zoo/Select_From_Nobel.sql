@@ -21,3 +21,9 @@ SELECT winner
 FROM nobel
 WHERE yr >= 2000
 AND subject like 'peace'
+
+--Show all details (yr, subject, winner) of the literature prize winners for 1980 to 1989 inclusive.
+SELECT yr, subject, winner
+FROM nobel
+WHERE (yr >= 1980 and yr <= 1989) 
+AND (subject = 'literature')
