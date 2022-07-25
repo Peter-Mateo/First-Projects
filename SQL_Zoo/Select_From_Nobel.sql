@@ -70,3 +70,9 @@ WHERE winner IN ('Peter GRÜNBERG')
 SELECT *
 FROM nobel
 WHERE winner IN ('EUGENE O''NEILL')
+
+--List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
+SELECT winner, yr, subject
+FROM nobel
+WHERE winner like 'sir%' 
+ORDER BY yr DESC, winner 
