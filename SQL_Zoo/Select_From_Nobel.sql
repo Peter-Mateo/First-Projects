@@ -47,3 +47,9 @@ SELECT yr, subject, winner
 FROM nobel
 WHERE ( subject like 'physics' and yr like 1980)
 OR ( subject like 'chemistry' and yr like 1984)
+
+--Show the year, subject, and name of winners for 1980 excluding chemistry and medicine
+SELECT yr, subject, winner
+FROM nobel
+WHERE yr = 1980
+AND NOT subject IN ('chemistry', 'medicine')
