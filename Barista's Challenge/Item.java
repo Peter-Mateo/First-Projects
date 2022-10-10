@@ -1,7 +1,8 @@
 public class Item {
+    // Variable Declaration
     private String name;
     private double price;
-
+    // Constructor
     Item(String name, double price){
         this.name = name;
         this.price = price;
