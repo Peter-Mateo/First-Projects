@@ -1,6 +1,6 @@
 package com.caresoft.clinicapp;
 
-public class User {
+public abstract class User {
     protected Integer id;
     protected int pin;
     // Constructor that takes id

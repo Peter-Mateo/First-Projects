@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public interface HIPAACompliantAdmin {
     
     abstract ArrayList<String> reportSecurityIncidents();
+
     
     // DEFAULT IMPLEMENTED METHODS
     // Used to print security incidents. 
@@ -22,5 +23,4 @@ public interface HIPAACompliantAdmin {
         }
         return reportSecurityIncidents().equals(expectedIncidents);
     }
-    
 }
